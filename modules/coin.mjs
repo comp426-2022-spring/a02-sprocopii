@@ -62,10 +62,10 @@ export function countFlips(array) {
   let tails = 0;
   let heads = 0;
   for (let i = 0; i < array.length; i++) {
-    if (i == "heads") {
+    if (array[i] == "heads") {
       heads = heads + 1;
     }
-    if (i == "tails") {
+    if (array[i] == "tails") {
       tails = tails + 1;
     }
   }
