@@ -96,8 +96,8 @@ export function flipACoin(call) {
   if (call == flip) {
     result = "win";
   }
-  const full_result = "{ call: " + call + ", flip: " + flip + ", result: " + result + " }";
-  return result;
+  const full_result = "{ call: '" + call + "', flip: '" + flip + "', result: '" + result + "' }";
+  return full_result;
 }
 
 

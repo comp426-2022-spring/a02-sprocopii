@@ -1,9 +1,8 @@
 //Import functions from coin.mjs
 import { coinFlips, countFlips} from "./modules/coin.mjs";
 
-//Require minimist module
-//const args = require("minimist")(process.argv.slice(2));
-import minimist from 'minimist';
+//Import minimist module
+import minimist from "minimist";
 const args = minimist(process.argv.slice(2));
 
 //Define "number" argument
