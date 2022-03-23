@@ -61,6 +61,7 @@ export function coinFlips(flips) {
 export function countFlips(array) {
   let tails = 0;
   let heads = 0;
+  let results = "{ heads: " + heads + ", tails: " + tails + " }";
   for (let i = 0; i < array.length; i++) {
     if (array[i] == "heads") {
       heads = heads + 1;
@@ -69,7 +70,12 @@ export function countFlips(array) {
       tails = tails + 1;
     }
   }
-  let results = "{ heads: " + heads + ", tails: " + tails + " }";
+  if (heads == 0) {
+    results = "{ tails: " + tails + " }";
+  }
+  if (tails == 0) {
+    results = "{ heads: " + heads + " }";
+  }
   return results;
 }
 
