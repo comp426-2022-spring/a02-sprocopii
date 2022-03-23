@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/comp426-2022-spring/a02-sprocopii/issues"
   },
-  "homepage": "https://github.com/comp426-2022-spring/a02-sprocopii#readme"
+  "homepage": "https://github.com/comp426-2022-spring/a02-sprocopii#readme",
+  "dependencies": {
+    "minimist": "^1.2.6"
+  }
 }
