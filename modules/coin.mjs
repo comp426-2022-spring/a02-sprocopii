@@ -39,7 +39,7 @@ export function coinFlip() {
 
 export function coinFlips(flips) {
   const results = [];
-  for (i = 0; i < flips; i++) {
+  for (let i = 0; i < flips; i++) {
     results[i] = coinFlip();
   }
   return results;
@@ -61,12 +61,12 @@ export function coinFlips(flips) {
 export function countFlips(array) {
   let tails = 0;
   let heads = 0;
-  for (i = 0; i < array.length; i++) {
+  for (let i = 0; i < array.length; i++) {
     if (i == "heads") {
-      heads++;
+      heads = heads + 1;
     }
     if (i == "tails") {
-      tails++;
+      tails = tails + 1;
     }
   }
   let results = "{ heads: " + heads + ", tails: " + tails + " }";
